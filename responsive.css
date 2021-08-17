@@ -1,0 +1,161 @@
+/* properties that don't shown in desktop layout */
+.below-buy-full-details{
+    display: none;
+}
+.mob-size-amazon-buy-logo{
+    display: none;
+}
+/*  tablet mood responsiveness max-width: 850px*/
+@media only screen and (max-width:890px){
+    .con-item1{
+        width: 15%;
+    }
+    .con-item1 a{
+        font-size: 15px;
+    }
+    .mobile{
+        width:85%;
+    }
+    .mob-buy-btn{
+        font-size: 15px;
+    }
+    .con-item h1{
+     font-size: 20px;
+    }
+    .con-item ul li {
+      font-size: 10px;  
+    }
+    .con-item .full-details{
+        font-size: 15px;
+    }
+}
+/*  tablet mood responsiveness max-width: 700px*/
+@media only screen and (max-width:700px){
+    .main-container{
+        min-height:500px;
+    }
+    .sub-main-container{
+        display:grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 50% 50%;
+        position: relative;
+    }
+    .con-item ul li {
+        font-size: 11px;  
+      }
+    .con-item1{
+        width: 100%;
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .con-item2{
+        width: 100%;
+    }
+    .con-item3{
+        width: 100%;
+        grid-column-start:2;
+        grid-column-end: 3;
+    }
+    .below-buy-full-details{
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+    .below-buy-full-details a{
+        font-size: 20px;
+    }
+    .full-details{
+        display: none;
+    }
+    .con3-1{
+    position: absolute;
+    width:150px;
+    height:50px;
+    top: 10px;
+    right: 10px;
+    }
+}
+@media only screen and (max-width:600px){
+    .con-item .con3-1{
+        display: none;
+    }
+    .mob-size-amazon-buy-logo{
+        display: block;
+        width: 100%;
+        height: 10%;
+        text-align: center;
+    }
+    .mob-size-amazon-buy-logo a{
+       
+        width: 150px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    .mob-size-amazon-buy-logo img{
+        display: block;
+        max-width: 100px;
+        margin-left: 50px;
+    }
+}
+   @media only screen and (max-width:550px){
+       .main-container{
+           height: 750px;
+       }
+       /* .sub-main-container{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 32% 32% 32%;
+        position: relative;
+    }
+    .con-item1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .con-item2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .con-item3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    } */
+    .sub-main-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+   
+    .mobile{
+        width: 150px;
+    }
+    .con-item{
+        width:250px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .con-item3{
+        display: none;
+    }
+    .below-buy-full-details{
+        position: absolute;
+        bottom: 25px;
+        left:-1px;
+        margin-bottom: 20px;
+    }
+    .below-buy-full-details a{
+        font-size: 15px;
+    }
+    
+}

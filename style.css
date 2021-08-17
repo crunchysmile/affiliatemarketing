@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common css styles */
+.display-flx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}
+
+/*main container style*/
+.main-container{
+    width: 90%;
+    margin: 0 auto;
+    height: 350px;
+    /* border: 1px solid rgb(90, 82, 82);    border */
+    border-radius: 15px;
+}
+
+/* sub meain container styles */
+.sub-main-container{
+    width: 100%;
+    height: 85%;
+    justify-content: space-between;
+    /* border: 1px solid rgb(77, 73, 73);      */
+    border-radius: 10px ;
+    -webkit-box-shadow: 0px 0px 21px -8px #000000; 
+    box-shadow: 0px 0px 21px -8px #000000;
+}
+/* individual container item == common css styles */  
+.con-item{
+    flex-direction: column;
+    /* border: 1px solid green;  border */
+    margin: 5px;
+    height: 100%;
+}
+.con-item1{
+    justify-content: space-between;
+}
+/* mobile image == common css style== */
+.mobile{
+    display: block;
+    width: 55%;
+    height: auto;
+}
+/* container item 1  */
+.con-item1{
+    width: 20%;
+    justify-content: space-around;
+}
+/* container item 2  */
+.con-item2{
+    width:35%;
+}
+/* container item 3  */
+.con-item3{
+    width:45%;
+}
+/* container 1 childrens styles */
+.mob-buy-btn{
+    display: block;
+    padding: 6px;
+    border: 2px solid grey; /**/ /*border*/ 
+    font-size: 115%;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: yellow;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+}
+.mob-buy-btn:hover{
+    color: white;
+    background-color: rgb(248, 95, 7);
+}
+/* container 2 and items style*/
+.con-item2{   
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* padding-left: 2rem; */
+}
+.con2-1{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.con2-2{
+    width: 100%;
+}
+.con-item li{
+    margin-bottom: 1.3rem;
+}
+
+.con-item h1{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+.con-item a{
+    text-decoration: none;
+}
+.con-item .star{
+    color: orange;
+    margin-top: 0.5rem;
+    margin-right: 3px;
+    overflow: hidden;
+}
+.con-item .star5{
+    /* background-color: rgb(16, 247, 16); */
+    color: rgb(219, 202, 202);
+}
+.mob-features-box{
+    font-family: sans-serif;
+    font-size: 1em;
+}
+.mob-features-box li i{
+    /* margin-right: 10px; */
+    color: rgb(164, 164, 165);
+    width: 30px;
+}
+.full-details a{
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: rgb(1, 1, 146);
+    font-weight: 650;
+}
+/* container 3 and items style*/
+.con3-1{
+   width: 100%;
+   height: 25%;
+   /* border: 1px solid red;  */
+   justify-content: flex-end;
+}
+.con3-1 a{
+    width: 40%;
+    flex-direction: column;
+}
+.con3-1 h1{
+    width: max-content;
+}
+.con3-1 img{
+    width: 100px;
+    height: auto;
+}
+.buy-amazon-logo{
+    margin-right: 3rem;
+}
+.con3-2{
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 75%;
+}
